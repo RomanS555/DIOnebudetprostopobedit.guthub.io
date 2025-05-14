@@ -7,7 +7,7 @@
   const str1 = document.getElementsByName("str1")[0]
   const str2 = document.getElementsByName("str1")[0]
   const btn = document.getElementsByName("butt")[0]
-  function sha256() {
+  async function sha256() {
   var message = str1.value;
   // encode as UTF-8
   const msgBuffer = new TextEncoder('utf-8').encode(message);
