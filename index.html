@@ -2,10 +2,13 @@
 <html>
   <input name = "str1">
   <input name = "str2">
+  <input name = "butt" type = "button">
   <script>
   const str1 = document.getElementsByName("str1")[0]
   const str2 = document.getElementsByName("str1")[0]
-  async function sha256(message) {
+  const btn = document.getElementsByName("butt")[0]
+    function sha256() {
+      message = str1.value;
   // encode as UTF-8
   const msgBuffer = new TextEncoder('utf-8').encode(message);
 
@@ -20,10 +23,8 @@
   console.log(hashHex);
   return hashHex;
   }
-while(true){
-  if(str1.value != ""){
-    str2.value = sha256(str1.value);
-  }
+  btn.addEventListener("click",sha256);
+
   
 }
 
