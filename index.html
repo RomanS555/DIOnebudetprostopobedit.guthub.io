@@ -2,13 +2,13 @@
 <html>
   <input name = "str1">
   <input name = "str2">
-  <input name = "butt" type = "button">
+  <input name = "butt" type = "button" value = "Перевод">
   <script>
   const str1 = document.getElementsByName("str1")[0]
   const str2 = document.getElementsByName("str1")[0]
   const btn = document.getElementsByName("butt")[0]
-    function sha256() {
-      message = str1.value;
+  function sha256() {
+  var message = str1.value;
   // encode as UTF-8
   const msgBuffer = new TextEncoder('utf-8').encode(message);
 
